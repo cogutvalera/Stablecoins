@@ -23,11 +23,12 @@
 
 	<div class="entry-content">
 		
-		<p><b>Abstract: </b><span style="font-weight: 400">In this piece we look over the history of distributed stablecoins, focusing on two case studies, BitShares (BitUSD) and MakerDAO (Dai). We examine the efficacy of various design choices, such as the inclusion of price oracles and pooled collateral. We conclude that while a successful stablecoin is likely to represent the holy grail of financial technology, none of the systems we have examined so far appear robust enough to scale in a meaningful way. The coins we have looked at seem to rely on “why would it trade at any other price?” type logic, to enforce price stability to some extent, although dependence on this reasoning is decreasing as technology improves.</span></p>
+		<p><b>Abstract: </b><span style="font-weight: 400">In this piece we look over the history of distributed stablecoins, focusing on two case studies, Bitshares (BitUSD) and MakerDAO (Dai). We examine the efficacy of various design choices, such as the inclusion of price oracles and pooled collateral. We conclude that while a successful stablecoin is likely to represent the holy grail of financial technology, none of the systems we have examined so far appear robust enough to scale in a meaningful way. The coins we have looked at seem to rely on “why would it trade at any other price?” type logic, to enforce price stability to some extent, although dependence on this reasoning is decreasing as technology improves.</span></p>
 <p><img class="alignnone size-full wp-image-10816" src="https://blog.bitmex.com/wp-content/uploads/2018/07/Cover.jpg" alt="" width="567" height="340" srcset="https://blog.bitmex.com/wp-content/uploads/2018/07/Cover.jpg 567w, https://blog.bitmex.com/wp-content/uploads/2018/07/Cover-300x180.jpg 300w, https://blog.bitmex.com/wp-content/uploads/2018/07/Cover-210x126.jpg 210w" sizes="(max-width: 567px) 100vw, 567px"></p>
 <p><b>Overview</b></p>
 <p><span style="font-weight: 400">Distributed stablecoins aim to achieve both the characteristics of crypto-coins like Bitcoin (censorship resistant digital transactions) and the price stability of traditional financial assets, such as the US Dollar or gold. These systems are distinct from tokens such as </span><a href="https://blog.bitmex.com/tether/"><span style="font-weight: 400">Tether</span></a><span style="font-weight: 400">, where one entity controls a pool of US Dollar collateral, ultimately making the system centralised and thus susceptible to being shut down by the authorities. </span></p>
-<p><span style="font-weight: 400">Along with the somewhat related idea of distributed exchanges, distributed stablecoins have been referred to as the “holy grail” of financial technology, due to their very strong potential benefits. In our view the transformative nature of such a technology on society would be immense, perhaps far more significant than Bitcoin or Ethereum tokens with their floating exchange rates. Distributed stablecoins could have the <a href="https://blog.bitmex.com/value_proposition/">advantages of Bitcoin</a> (censorship resistance combined with the ability to transact electronically), without the difficulties of a volatile exchange rate and the challenge of encouraging users and merchants to adopt a new unknown token. Such a system is likely to be very successful and therefore it is no surprise that so many people have attempted to launch such projects:</span></p>
+<p><span style="font-weight: 400">Along with the somewhat related idea of distributed exchanges, distributed stablecoins have been referred to as the “holy grail” of financial technology, due to their very strong potential benefits. In our view the transformative nature of such a technology on society would be immense, perhaps far more significant than Bitcoin or Ethereum tokens with their floating exchange rates.</p>
+<p>Distributed stablecoins could have the <a href="https://blog.bitmex.com/value_proposition/">advantages of Bitcoin</a> (censorship resistance combined with the ability to transact electronically), without the difficulties of a volatile exchange rate and the challenge of encouraging users and merchants to adopt a new unknown token. Such a system is likely to be very successful and therefore it is no surprise that so many people have attempted to launch such projects:</span></p>
 <p><b>List of stablecoin projects </b></p>
 <table style="width: 651px">
 <tbody>
@@ -38,10 +39,10 @@
 <td width="25%"><span style="color: white"><b>White paper link</b></span></td>
 </tr>
 <tr>
-<td style="width: 173px">BitShares (BitUSD)</td>
+<td style="width: 173px">Bitshares (BitUSD)</td>
 <td style="width: 166px"><span style="font-weight: 400">Crypto-collateralized</span></td>
 <td style="width: 161px"><span style="font-weight: 400">21 July 2014</span></td>
-<td style="width: 151px"><a href="https://blog.bitmex.com/wp-content/uploads/2018/06/173481633-BitShares-White-Paper.pdf"><span style="font-weight: 400">White paper</span></a></td>
+<td style="width: 151px"><a href="https://blog.bitmex.com/wp-content/uploads/2018/06/173481633-Bitshares-White-Paper.pdf"><span style="font-weight: 400">White paper</span></a></td>
 </tr>
 <tr bgcolor="#F2F7FF">
 <td style="width: 173px">Nu (NuBits)</td>
@@ -118,7 +119,7 @@
 <p><span style="font-weight: 400">However advanced or sophisticated the distributed stablecoin technology is, we believe the token is likely to be less robust than the layers above it in the money supply tree.</span></p>
 <p><span style="font-weight: 400">In this piece we review some of the most prominent and interesting attempts at building these synthetic US Dollar type systems. BitUSD in 2014 and then a more recent project, MakerDAO (Dai).</span></p>
 <p>&nbsp;</p>
-<p style="text-align: center"><span style="text-decoration: underline"><b>Case study 1: BitShares (BitUSD) – 2014</b></span></p>
+<p style="text-align: center"><span style="text-decoration: underline"><b>Case study 1: Bitshares (BitUSD) – 2014</b></span></p>
 <table>
 <tbody>
 <tr bgcolor="#526482">
@@ -138,23 +139,12 @@
 <td><span style="font-weight: 400">Yes</span></td>
 </tr>
 <tr bgcolor="#F2F7FF">
-<td><span style="font-weight: 400">Price oracle</span></td>
-<td><span style="font-weight: 400">No</span></td>
+<td><span style="font-weight: 400">Price feed publishers</span></td>
+<td><span style="font-weight: 400">Yes</span></td>
 </tr>
 </tbody>
 </table>
-<p><span style="font-weight: 400">The first stable coin we will discuss is BitUSD, a stablecoin on the BitShares platform. BitShares was a delegated proof of stake (DPOS) platform launched in 2014 by:</span></p>
-<ul>
-<li style="font-weight: 400"><span style="font-weight: 400">Daniel Larimer (The primary architect behind EOS and Steem), </span></li>
-<li style="font-weight: 400"><span style="font-weight: 400">Charles Hoskinson (the former Ethereum Foundation CEO &amp; Cardano architect), and </span></li>
-<li style="font-weight: 400"><span style="font-weight: 400">Stan Larimer (Daniel’s father). </span></li>
-</ul>
-<p><span style="font-weight: 400">BitShares is just one in a long line of decentralised autonomous corporation (DAC) type platforms released by Daniel Larimer, as the below image shows:</span></p>
-<p><img class="alignnone size-full wp-image-10817" src="https://blog.bitmex.com/wp-content/uploads/2018/07/dac.png" alt="" width="709" height="432" srcset="https://blog.bitmex.com/wp-content/uploads/2018/07/dac.png 709w, https://blog.bitmex.com/wp-content/uploads/2018/07/dac-300x183.png 300w, https://blog.bitmex.com/wp-content/uploads/2018/07/dac-210x128.png 210w" sizes="(max-width: 709px) 100vw, 709px"></p>
-<p><strong><span style="font-size: 8pt">(Note: Daniel Larmier’s company <a href="https://blog.bitmex.com/wp-content/uploads/2018/06/iif-aa-2015.pdf">Invictus Innovations</a> launched a number of token/DAC platforms including Protoshares, Angelshares and BitShares. The black arrows represent Protoshares coin holders being granted tokens in the new chains, which Invictus Innovations promised to deliver on all new DAC platforms.&nbsp;</span></strong><strong><span style="font-size: 8pt">Source: </span><a href="https://blog.bitmex.com/wp-content/uploads/2018/06/bsharespic.jpg"><span style="font-size: 8pt">BitSharestalk</span></a>)</strong></p>
-<p>&nbsp;</p>
-<p><span style="text-decoration: underline"><span style="font-weight: 400">BitUSD Marketing material</span></span></p>
-<p><img class="alignnone size-full wp-image-10818" src="https://blog.bitmex.com/wp-content/uploads/2018/07/mm.png" alt="" width="801" height="625" srcset="https://blog.bitmex.com/wp-content/uploads/2018/07/mm.png 801w, https://blog.bitmex.com/wp-content/uploads/2018/07/mm-300x234.png 300w, https://blog.bitmex.com/wp-content/uploads/2018/07/mm-768x599.png 768w, https://blog.bitmex.com/wp-content/uploads/2018/07/mm-210x164.png 210w" sizes="(max-width: 801px) 100vw, 801px"><strong><span style="font-size: 8pt">(Source: <a href="https://www.youtube.com/watch?v=5BV55IrZi7g">Introduction to BitShares Youtube video</a>)</span></strong></p>
+<p><span style="font-weight: 400">We'll first discuss BitUSD which is one of many available stablecoins (<a href="http://docs.bitshares.org/bitshares/user/mpa.html#collateralized-tokens">Market Pegged Assets</a>) which operate on-top of the Bitshares platform.</span> Bitshares is a Delegated-Proof-of-Stake (DPOS) blockchain based decentralized exchange (DEX) which offers next generation trading performance and the tools for anyone to create their own User Issued Assets (<a href="http://docs.bitshares.org/bitshares/user/uia.html">UIAs</a>), Market Pegged Assets (like <a href="http://open-explorer.io/#/assets/USD">bitUSD</a>, <a href="http://open-explorer.io/#/assets/CNY">bitCNY</a>, <a href="http://open-explorer.io/#/assets/HERO">HERO</a>, etc..), prediction markets and a large reserve pool of Bitshares available to workers and witnesses given sufficient network consensus.</p>
 <p><span style="text-decoration: underline"><span style="font-weight: 400">BitUSD System dynamics</span></span></p>
 <table>
 <tbody>
@@ -164,11 +154,11 @@
 </tr>
 <tr>
 <td><span style="font-weight: 400">Bitshares</span></td>
-<td><span style="font-weight: 400">The native currency of the BitShares platform</span></td>
+<td><span style="font-weight: 400">The native currency of the Bitshares platform</span></td>
 </tr>
 <tr bgcolor="#F2F7FF">
 <td><span style="font-weight: 400">Bitshares held as collateral</span></td>
-<td><span style="font-weight: 400">Separate pools of Bitshares&nbsp; held as collateral, used as backing for the stablecoin.</span></td>
+<td><span style="font-weight: 400">Separate pools of Bitshares held as stablecoin backing collateral.</span></td>
 </tr>
 <tr>
 <td><span style="font-weight: 400">BitUSD</span></td>
@@ -189,15 +179,19 @@
 </tr>
 <tr bgcolor="#F2F7FF">
 <td><span style="font-weight: 400">BitUSD creators</span></td>
-<td><span style="font-weight: 400">Those that create new BitUSD, by selling it into the market (creating new loans), by posting BitShares as collateral. This loan may be for a small period of time, after which it needs to be rolled over or have its collateral topped up to the initial margin level.</span></td>
+<td><span style="font-weight: 400">Those that create new BitUSD, by selling it into the market (creating new loans), by posting Bitshares as collateral. This loan may be for a small period of time, after which it needs to be rolled over or have its collateral topped up to the initial margin level.</span></td>
 </tr>
 <tr>
 <td><span style="font-weight: 400">Traders</span></td>
-<td><span style="font-weight: 400">Those exchanging BitUSD for Bitshares, and vica versa, on the platform’s own distributed exchange. There is therefore a Bitshares vs BitUSD market price.</span></td>
+<td><span style="font-weight: 400">Those trading bitUSD for any asset issued on the BTS DEX, and vica versa. There are no trading pair limitations for bitUSD.</span></td>
 </tr>
 <tr bgcolor="#F2F7FF">
 <td><span style="font-weight: 400">Block producers</span></td>
-<td><span style="font-weight: 400">Bitshares block producers/miners have a role of spending the BitShares backing BitUSD, something they are only entitled to do if the value of the BitShares is less than 150% of the value of the BitUSD it is backing (based on the BitUSD vs BitShares exchange rate on the system’s own distributed exchange). The miner can then uses the Bitshares to redeem/destroy the BitUSD. (After the launch the 150% margin level was increased to 200%)</span></td>
+<td><span style="font-weight: 400">Bitshares block producers have no influence over the <a href="http://docs.bitshares.org/bitshares/user/mpa.html#collateralized-tokens">Market Pegged Asset</a> smart contract. The smart contract enforces the minimum backing collateral and will force settle under collateralized short positions (below 175%) after a short delay. Similarly, the smart contract handles the exchange of settled bitUSD in return for backing BTS tokens.</span></td>
+</tr>
+<tr>
+<td><span style="font-weight: 400">Price feed publishers</span></td>
+<td><span style="font-weight: 400">All active <a href="http://docs.bitshares.org/bitshares/user/mpa.html#collateralized-tokens">MPA</a> on the BTS DEX have price feed publishers who frequently publish the latest asset value in the backing collateral asset's value. These publishers can be the Bitshares committee members, the Bitshares witnesses or 25 private price feed publishers for private MPA.</span></td>
 </tr>
 </tbody>
 </table>
@@ -210,40 +204,25 @@
 <td width="50%"><span style="color: white"><b>Description</b></span></td>
 </tr>
 <tr>
-<td><span style="font-weight: 400">Investor psychology (Unclear/”Why not trade at $1?”)</span></td>
+<td><span style="font-weight: 400">Price feeds</span></td>
 <td><span style="font-weight: 400">Both directions</span></td>
-<td><span style="font-weight: 400">There does not appear to be a specific price stability mechanism in the BitUSD system. One can redeem and create BitUSD, however the price this transfer occurs at is determined by the BitUSD vs BitShares price in distributed exchange, which is not linked to “real USD”. In a way the price references itself. There is therefore no direct mechanism keeping the price of BitUSD at $1, but the argument put forward is “why would it trade at any other price?” In our view this logic is weak.</span></td>
+<td><span style="font-weight: 400">Bitshares MPA have a price feed mechanism which uses the median published price feed (from a set of many price feed publishers) as the feed price. There are approx 27 price feed publishers for bitUSD currently.</span></td>
 </tr>
 <tr bgcolor="#F2F7FF">
 <td><span style="font-weight: 400">BitUSD redemption (indirect)</span></td>
 <td><span style="font-weight: 400">Positive</span></td>
-<td><span style="font-weight: 400">Should the value of the collateral currency (BitShares) fall, any BitUSD holder can redeem the BitUSD and obtain $1 worth of BitShares, assuming the market price of BitUSD is still worth $1 and there is sufficient BitShares held in collateral.</span><p></p>
-<p><span style="font-weight: 400">This stability mechanism protects the integrity of the system only in the event that the value of BitShares falls and the BitUSD market price remains at $1. It does not directly stabilize the price of BitUSD around $1, in our view. If the price of BitUSD deviates from $1, this mechanism may not help correct the price.</span></p>
+<td><span style="font-weight: 400">Should the value of the collateral currency (Bitshares) fall, any BitUSD holder can redeem the BitUSD and obtain $1 worth of Bitshares, assuming the market price of BitUSD is still worth $1 and there is sufficient Bitshares held in collateral.</span><p></p>
+<p><span style="font-weight: 400">This stability mechanism protects the integrity of the system only in the event that the value of Bitshares falls and the BitUSD market price remains at $1. It does not directly stabilize the price of BitUSD around $1, in our view. If the price of BitUSD deviates from $1, this mechanism may not help correct the price.</span></p>
 <p>In our view, it is important to draw the distinction between a mechanism designed to protect the value of collateral and that of a mechanism which directly causes the price of the stablecoin to converge.</p></td>
 </tr>
 </tbody>
 </table>
 <p><span style="text-decoration: underline"><span style="font-weight: 400">Weaknesses</span></span></p>
-<p><b>Exposure to a fall in the value of collateral</b><span style="font-weight: 400"> – BitShares was a new, untested and low value asset, and therefore its value was volatile. If the value of the token falls by 50% sharply, in a period spanned by one of the loans used to create BitUSD, there may be insufficient collateral and the peg could fail.</span></p>
-<p><b>Lack of a price oracle</b><span style="font-weight: 400"> – In our view one of the most controversial aspects of this design is the absence of any price oracle mechanism, providing the system with real world exchange rates. However any price oracle system is challenging to implement and may introduce several weaknesses and avenues for manipulation. We will talk more about this in part 2. In our view, the only real way around this may be that any stablecoin system may require a price feed from a distributed exchange, which can in theory publish a distributed price feed from real world US Dollar transactions. The distributed exchange in BitShares did not allow “real USD”. A distributed exchange system like </span><a href="https://bisq.network/"><span style="font-weight: 400">Bisq</span></a><span style="font-weight: 400">, without a central clearing could in theory allow “real USD” prices and provide a distributed price feed. &nbsp;&nbsp;Therefore stablecoins may eventually be considered as a layer two technology on top of liquid and robust distributed exchange platforms, should these systems ever emerge.</span></p>
-<p><b>Manipulation – </b><span style="font-weight: 400">Trading volume in the Bitshares vs BitUSD market on the distributed exchange platform was low, it was therefore possible for block producers to manipulate the market by causing the value of Bitshares to fall relative to BitUSD, enabling them to obtain Bitshares at a discount.</span></p>
-<p><strong>Lack of any price stability mechanism –&nbsp;</strong>The main weakness of the system is the lack of any mechanism to move the price towards $1, other than the “where else would it trade?” logic.</p>
-<p><span style="text-decoration: underline"><span style="font-weight: 400">Daniel Larimer’s defence of the system</span></span></p>
-<p><span style="font-weight: 400">In Daniel’s view, the mechanism of BitUSD creation is analogous to how USD are created in the economy, in that financial institutions lend them into existence.</span></p>
-<blockquote><p><span style="font-weight: 400">It’s the same way dollars are created in the regular banking system. Dollars are learnt into existence backed by collateral, in the case of the current banking system the collateral is your house. In the case of our system its shares in the DAC itself.</span></p></blockquote>
-<p><strong><span style="font-size: 8pt">(Source: <a href="https://letstalkbitcoin.com/blog/post/lets-talk-bitcoin-129-dogeparty-and-delegated-proof-of-stake">Lets talk Bitcoin episode 129</a>)</span></strong></p>
-<p>&nbsp;</p>
-<p><span style="font-weight: 400">In a way Daniel is correct here, however as we explained in the introduction to this piece, these synthetic dollars are far less reliable than those created by more traditional banks, and can be considered as a whole new layer of risk, as they are even further away from base money. In addition to this, when obtaining a bank loan, the bank typically has a legal obligation to provide the customer physical cash should they demand it. While such an outcome for BitUSD holder is possible, its not a legal obligation for the creators of BitUSD. Although obviously banks typically do not have the cash in reserve to pay back their deposits, we think the fact they have a legal obligation to do so is an important distinction to draw when comparing BitUSD to US Dollar banking deposits.</span></p>
-<p><span style="font-weight: 400">In response to the supposed weakness of a lack of a price peg, Larimer argues in favor of his “hypothesis that the price feed is unnecessary” as follows:</span></p>
-<blockquote><p><span style="font-weight: 400">It implements automatic margin calls, such that if the price moves against someone who is effectively short, it forces them to cover and buy it back in the market and that creates a peg. The market peg works on the premise that all market participants buy and sell based on what they think market participants will be buying and selling in the future. The only rational choice is to assume that it’s going to trade based on the peg in the future. If you don’t believe that they you have to decide on which way it’s going to go, up or down. And if you don’t have a way of saying you abstain from the market. If you don’t think it works you sell the shares and get out, as the systems going to fail in the first place. So its a self reinforcing market peg, that causes the asset to always have the purchasing power of the dollar.</span></p></blockquote>
-<p><span style="font-size: 8pt"><strong>(Source: <a href="https://letstalkbitcoin.com/blog/post/lets-talk-bitcoin-129-dogeparty-and-delegated-proof-of-stake">Lets talk Bitcoin episode 129</a>)</strong></span></p>
-<p>&nbsp;</p>
-<p><span style="font-weight: 400">In our view this idea that a price of $1 is the “only rational choice” is a weak argument. It is basically saying that if the price is not $1, then what will it be? This logic may hold true for some periods, but it is not sustainable and will not scale, in our view.</span></p>
+<p><b>Exposure to a fall in the value of collateral</b><span style="font-weight: 400"> – Bitshares was a new, untested and low value asset, and therefore its value was volatile. If the value of the token falls by 50% sharply, in a period spanned by one of the loans used to create BitUSD, there may be insufficient collateral and the peg could fail.</span></p>
+
 <p><span style="text-decoration: underline"><span style="font-weight: 400">Conclusion</span></span></p>
-<p><span style="font-weight: 400">The volume of BitUSD in existence was a lot lower than many had hoped, in some periods there was only around $40,000 in issuance. At the same time liquidity was very low and the price stability was weak, as the below chart illustrates. The main architect of BitUSD went on to propose a new stablecoin SteemUSD in 2017, this time including a price feed system. Therefore we consider BitUSD as an interesting early experiment, it did not achieve what was hoped nor did it build a robust stablecoin.</span></p>
-<p><img class="alignnone size-full wp-image-10819" src="https://blog.bitmex.com/wp-content/uploads/2018/07/bitusd.png" alt="" width="749" height="352" srcset="https://blog.bitmex.com/wp-content/uploads/2018/07/bitusd.png 749w, https://blog.bitmex.com/wp-content/uploads/2018/07/bitusd-300x141.png 300w, https://blog.bitmex.com/wp-content/uploads/2018/07/bitusd-210x99.png 210w" sizes="(max-width: 749px) 100vw, 749px"></p>
-<p><strong><span style="font-size: 8pt">(Source: <a href="http://www.coinmarketcap.com/">Coinmarketcap</a>)</span></strong></p>
-<p>&nbsp;</p>
+<p><span style="font-weight: 400">The supply of bitUSD is significantly lower than that available in Tether, and at times of high volatility the market has traded slightly above|below the price feed rate rather than hold the true $1.00 peg. There are endless possibilities for new MPA on the BTS DEX, so keep an eye on future Bitshares community developments.</span></p></p>
+
 <p style="text-align: center"><span style="text-decoration: underline"><span style="font-size: 11pt"><b>Case Study 2: MakerDAO (Dai) – 2017</b></span></span></p>
 <table>
 <tbody>
