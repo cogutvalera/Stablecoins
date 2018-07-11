@@ -1,16 +1,16 @@
 # Source: https://blog.bitmex.com/a-brief-history-of-stablecoins-part-1/
 
 # Tasklist:
-[ ] Convert to markdown
-[ ] Modify content for accuracy (do not change article structure)
-  [ ] Ensure content reflects "BTS Token" rather than "bitshares"
-  [ ] Describe the process for BTS Token holder to create (short) bitUSD into the smart contract (collateral ratio, etc.)
-  [ ] Describe the process for the smart contract to sell the bitUSD within the DEX market
-  [ ] Describe the process for a DEX user to purchase bitUSD from the market
-  [ ] Correct the sentiment that the "Block Producers" may influence the market and somehow benefit, rather the smart contract does this
-  [ ] Correct he omission of fact that Block Producers provide oracle price feed data from external sources, used by the smart contract
-  [ ] Describe the mechanics of the smart contract using the median feed price for various events
-[ ] Other?
+
+- [ ] Modify content for accuracy (do not change article structure)
+  - [ ] Ensure content reflects "BTS Token" rather than "bitshares"
+  - [ ] Describe the process for BTS Token holder to create (short) bitUSD into the smart contract (collateral ratio, etc.)
+  - [ ] Describe the process for the smart contract to sell the bitUSD within the DEX market
+  - [ ] Describe the process for a DEX user to purchase bitUSD from the market
+  - [ ] Correct the sentiment that the "Block Producers" may influence the market and somehow benefit, rather the smart contract does this
+  - [ ] Correct he omission of fact that Block Producers provide oracle price feed data from external sources, used by the smart contract
+  - [ ] Describe the mechanics of the smart contract using the median feed price for various events
+- [ ] Other?
 
 # Content:
 
